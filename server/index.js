@@ -33,7 +33,7 @@ app.use('/api/v1/category', categoryRoute);
 app.use('/api/v1/product', productRoute);
 
 
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, ()=>{
     console.log(`Server is running at https://localhost:${PORT}`.bgRed.white)
 })
